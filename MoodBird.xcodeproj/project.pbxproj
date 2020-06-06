@@ -7,23 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7D740D4C039D019F9B2B137 /* Pods_MoodBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586BF534E0B910DD1F96A1C0 /* Pods_MoodBird.framework */; };
 		B89B65752488BA1B00812D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B65742488BA1B00812D74 /* AppDelegate.swift */; };
 		B89B65772488BA1B00812D74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B65762488BA1B00812D74 /* SceneDelegate.swift */; };
-		B89B65792488BA1B00812D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B65782488BA1B00812D74 /* ViewController.swift */; };
 		B89B657C2488BA1B00812D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89B657A2488BA1B00812D74 /* Main.storyboard */; };
 		B89B657E2488BA1C00812D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89B657D2488BA1C00812D74 /* Assets.xcassets */; };
 		B89B65812488BA1C00812D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89B657F2488BA1C00812D74 /* LaunchScreen.storyboard */; };
+		B89B658B2488BA9600812D74 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89B658A2488BA9600812D74 /* RootViewController.swift */; };
+		B8AC0F132488C1F900E22515 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8AC0F122488C1F900E22515 /* TweetSentimentClassifier.mlmodel */; };
+		B8AC0F272488CB4A00E22515 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AC0F1D2488CB0400E22515 /* SwifteriOS.framework */; };
+		B8AC0F282488CB4A00E22515 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8AC0F1D2488CB0400E22515 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8AC0F2B2488D03700E22515 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AC0F2A2488D03700E22515 /* Constants.swift */; };
+		B8AC0F2E2488D11700E22515 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8AC0F2D2488D11700E22515 /* Secrets.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B8AC0F1C2488CB0400E22515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		B8AC0F1E2488CB0400E22515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		B8AC0F202488CB0400E22515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		B8AC0F222488CB0400E22515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		B8AC0F242488CB0400E22515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8AC0F292488CB4A00E22515 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8AC0F282488CB4A00E22515 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		586BF534E0B910DD1F96A1C0 /* Pods_MoodBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7094D1A4591EBCF7349573 /* Pods-MoodBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodBird.release.xcconfig"; path = "Target Support Files/Pods-MoodBird/Pods-MoodBird.release.xcconfig"; sourceTree = "<group>"; };
+		8D4411211EDB0C599577E133 /* Pods-MoodBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodBird.debug.xcconfig"; path = "Target Support Files/Pods-MoodBird/Pods-MoodBird.debug.xcconfig"; sourceTree = "<group>"; };
 		B89B65712488BA1B00812D74 /* MoodBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89B65742488BA1B00812D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B89B65762488BA1B00812D74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B89B65782488BA1B00812D74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B89B657B2488BA1B00812D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B89B657D2488BA1C00812D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B89B65802488BA1C00812D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B89B65822488BA1C00812D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89B658A2488BA9600812D74 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B8AC0F122488C1F900E22515 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../../../Downloads/Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		B8AC0F2A2488D03700E22515 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8AC0F2D2488D11700E22515 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +96,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8AC0F272488CB4A00E22515 /* SwifteriOS.framework in Frameworks */,
+				A7D740D4C039D019F9B2B137 /* Pods_MoodBird.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91960199ACF86650696A3CCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D4411211EDB0C599577E133 /* Pods-MoodBird.debug.xcconfig */,
+				5D7094D1A4591EBCF7349573 /* Pods-MoodBird.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B89B65682488BA1B00812D74 = {
 			isa = PBXGroup;
 			children = (
+				B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */,
 				B89B65732488BA1B00812D74 /* MoodBird */,
 				B89B65722488BA1B00812D74 /* Products */,
+				B8AC0F262488CB4A00E22515 /* Frameworks */,
+				91960199ACF86650696A3CCF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +136,62 @@
 		B89B65732488BA1B00812D74 /* MoodBird */ = {
 			isa = PBXGroup;
 			children = (
+				B8AC0F122488C1F900E22515 /* TweetSentimentClassifier.mlmodel */,
 				B89B65742488BA1B00812D74 /* AppDelegate.swift */,
 				B89B65762488BA1B00812D74 /* SceneDelegate.swift */,
-				B89B65782488BA1B00812D74 /* ViewController.swift */,
-				B89B657A2488BA1B00812D74 /* Main.storyboard */,
+				B8AC0F2C2488D04200E22515 /* Model */,
+				B89B65882488BA2A00812D74 /* Controller */,
+				B89B65892488BA3A00812D74 /* View */,
 				B89B657D2488BA1C00812D74 /* Assets.xcassets */,
 				B89B657F2488BA1C00812D74 /* LaunchScreen.storyboard */,
 				B89B65822488BA1C00812D74 /* Info.plist */,
+				B8AC0F2D2488D11700E22515 /* Secrets.plist */,
 			);
 			path = MoodBird;
+			sourceTree = "<group>";
+		};
+		B89B65882488BA2A00812D74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B89B658A2488BA9600812D74 /* RootViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B89B65892488BA3A00812D74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B89B657A2488BA1B00812D74 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8AC0F152488CB0400E22515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC0F1D2488CB0400E22515 /* SwifteriOS.framework */,
+				B8AC0F1F2488CB0400E22515 /* SwifterMac.framework */,
+				B8AC0F212488CB0400E22515 /* SwifterDemoiOS.app */,
+				B8AC0F232488CB0400E22515 /* SwifterDemoMac.app */,
+				B8AC0F252488CB0400E22515 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8AC0F262488CB4A00E22515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				586BF534E0B910DD1F96A1C0 /* Pods_MoodBird.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8AC0F2C2488D04200E22515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8AC0F2A2488D03700E22515 /* Constants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89B65852488BA1C00812D74 /* Build configuration list for PBXNativeTarget "MoodBird" */;
 			buildPhases = (
+				DCA5CA8ADFD2FDAFEC571681 /* [CP] Check Pods Manifest.lock */,
 				B89B656D2488BA1B00812D74 /* Sources */,
 				B89B656E2488BA1B00812D74 /* Frameworks */,
 				B89B656F2488BA1B00812D74 /* Resources */,
+				B8AC0F292488CB4A00E22515 /* Embed Frameworks */,
+				3B787F05602024EA26268F50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +243,12 @@
 			mainGroup = B89B65682488BA1B00812D74;
 			productRefGroup = B89B65722488BA1B00812D74 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B8AC0F152488CB0400E22515 /* Products */;
+					ProjectRef = B8AC0F142488CB0400E22515 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B89B65702488BA1B00812D74 /* MoodBird */,
@@ -120,11 +256,50 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B8AC0F1D2488CB0400E22515 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = B8AC0F1C2488CB0400E22515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8AC0F1F2488CB0400E22515 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = B8AC0F1E2488CB0400E22515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8AC0F212488CB0400E22515 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = B8AC0F202488CB0400E22515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8AC0F232488CB0400E22515 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = B8AC0F222488CB0400E22515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8AC0F252488CB0400E22515 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = B8AC0F242488CB0400E22515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		B89B656F2488BA1B00812D74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8AC0F2E2488D11700E22515 /* Secrets.plist in Resources */,
 				B89B65812488BA1C00812D74 /* LaunchScreen.storyboard in Resources */,
 				B89B657E2488BA1C00812D74 /* Assets.xcassets in Resources */,
 				B89B657C2488BA1B00812D74 /* Main.storyboard in Resources */,
@@ -133,14 +308,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B787F05602024EA26268F50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodBird/Pods-MoodBird-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodBird/Pods-MoodBird-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoodBird/Pods-MoodBird-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA5CA8ADFD2FDAFEC571681 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodBird-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B89B656D2488BA1B00812D74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89B65792488BA1B00812D74 /* ViewController.swift in Sources */,
+				B8AC0F2B2488D03700E22515 /* Constants.swift in Sources */,
 				B89B65752488BA1B00812D74 /* AppDelegate.swift in Sources */,
 				B89B65772488BA1B00812D74 /* SceneDelegate.swift in Sources */,
+				B8AC0F132488C1F900E22515 /* TweetSentimentClassifier.mlmodel in Sources */,
+				B89B658B2488BA9600812D74 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +501,7 @@
 		};
 		B89B65862488BA1C00812D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4411211EDB0C599577E133 /* Pods-MoodBird.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +520,7 @@
 		};
 		B89B65872488BA1C00812D74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7094D1A4591EBCF7349573 /* Pods-MoodBird.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
