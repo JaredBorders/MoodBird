@@ -11,7 +11,7 @@ CoreML3 - SwiftyJSON - Twitter's Standard RESTful API - Twitter Framework: Swift
 Machine learning and language processing
 
 ## Installation
-Download newest Xcode from the app store and replace my free standard twitter API keys with your own.
+Download newest version of Xcode from the app store and replace my free standard twitter API keys with your own.
 
 ## Reference
 https://github.com/mattdonnelly/Swifter
