@@ -1,14 +1,11 @@
 ## MoodBird
-MoodBird is an iOS app that pulls tweets from twitter via their REST API and uses CoreML3 to predict the sentiment for these given tweets. The ML model I created was trained via CreateML with data provided by the LondonAppBrewery. 
+MoodBird is an iOS app that pulls tweets from twitter via their RESTful API and uses CoreML3 to predict the sentiment for these given tweets. The ML model I created was trained via CreateML with data provided by the LondonAppBrewery. 
 
 ## Motivation
 MoodBird was created to explore CoreML3 and Twitter's API
 
 ## Tech/framework used
-**CoreML3**
-**SwiftyJSON**
-**Twitter's Standard RESTful API**
-**Twitter Framework: Swifter by Matt Donnelly**
+CoreML3 - SwiftyJSON - Twitter's Standard RESTful API - Twitter Framework: Swifter by Matt Donnelly
 
 ## Features
 Machine learning and language processing
